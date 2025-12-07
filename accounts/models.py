@@ -7,7 +7,7 @@ class Profile(models.Model):
     bio = models.TextField(blank=True)
     profile_picture = models.ImageField(
         upload_to='profiles/', blank=True, null=True
-    )  # optional profile image
+    )
     website = models.URLField(blank=True, null=True)        
     created_at = models.DateTimeField(auto_now_add=True)
 
